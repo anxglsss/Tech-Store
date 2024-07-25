@@ -29,13 +29,6 @@ export const Navbar: React.FC = observer(() => {
 		})
 	}
 
-	const checkCart = () => {
-		if (UserStore.cart.length > 0) {
-			return true
-		}
-		return false
-	}
-
 	return (
 		<>
 			{contextHolder}

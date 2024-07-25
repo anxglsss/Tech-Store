@@ -1,7 +1,7 @@
 // src/components/ProductItem.tsx
 import { message, Modal, Rate } from 'antd'
 import { motion } from 'framer-motion'
-import React, { ForwardedRef, forwardRef, useEffect, useState } from 'react'
+import React, { forwardRef, useEffect, useState } from 'react'
 import minus from '../../assets/minus.png'
 import sign from '../../assets/sign.png'
 import UserStore from '../../stores/UserStore'
@@ -17,7 +17,7 @@ interface ProductItemProps {
 }
 
 const ProductItem: React.FC<ProductItemProps> = forwardRef(
-	({ name, image, desc, price, id }, ref: ForwardedRef<HTMLDivElement>) => {
+	({ name, image, desc, price, id }) => {
 		const [messageApi, contextHolder] = message.useMessage()
 
 		const success = () => {
