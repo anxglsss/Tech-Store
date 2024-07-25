@@ -1,0 +1,71 @@
+.cart-container {
+	@apply px-8 py-5 mx-[8%] mt-8 text-white font-outfit font-bold;
+	animation: fadeIn 0.8s ease-in-out;
+}
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.cart-title {
+	@apply font-outfit font-bold text-5xl text-secondary mb-8;
+}
+
+.cart-items {
+	@apply grid gap-4;
+}
+
+.cart-item {
+	@apply bg-slate-950 px-6 py-4 rounded-2xl shadow-md flex items-center gap-4;
+}
+
+.cart-item img {
+	@apply w-32 h-32 rounded-lg;
+}
+
+.cart-item-info {
+	@apply flex flex-col ml-4;
+}
+
+.cart-item-title {
+	@apply text-3xl font-outfit font-semibold;
+}
+
+.cart-item-quantity {
+	@apply text-lg font-outfit;
+}
+
+.remove-button {
+	@apply bg-secondary text-white px-4 py-1 rounded-md cursor-pointer hover:bg-purple-700 transition-all duration-300 mt-4;
+}
+
+.clear-all-button {
+	@apply bg-secondary text-white px-6 py-2 rounded-md mt-6 cursor-pointer hover:bg-purple-700  transition-all duration-300;
+}
+
+.cart-summary {
+	@apply bg-slate-950 px-6 py-4 rounded-2xl shadow-md mt-2;
+}
+
+.summary-title {
+	@apply text-3xl font-outfit font-bold text-secondary mb-4 mt-8;
+}
+
+.summary-item {
+	@apply text-xl font-outfit mb-2;
+}
+
+.total-price {
+	@apply font-bold;
+}
+
+.submit-button {
+	@apply bg-secondary text-white px-6 py-3 rounded-md mt-4 cursor-pointer hover:bg-purple-700 transition-all duration-300;
+}
+.empty-cart-message {
+	@apply text-4xl;
+}

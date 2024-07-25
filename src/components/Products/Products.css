@@ -1,0 +1,57 @@
+.prod-title {
+	@apply font-outfit font-bold text-6xl text-secondary ml-[40%] mt-[100px];
+}
+.product-filter {
+	@apply mb-4 flex items-center ml-[21%] gap-[80px] mt-[40px] cursor-pointer mb-[70px];
+}
+.product-filter img {
+	@apply gap-4 w-24 h-24 bg-indigo-950 bg-opacity-40 rounded-3xl p-[10px] cursor-pointer hover:scale-90 transition-all duration-500;
+	transition: border-color 0.5s ease;
+}
+
+.selected {
+	@apply border-[4px] border-purple-500;
+}
+.product-main {
+	@apply grid gap-4 grid-cols-3 mx-[8%];
+}
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.product-item {
+	@apply bg-slate-950 px-8 py-5 rounded-2xl shadow-md flex flex-col items-start w-[340px] text-white gap-1 relative cursor-pointer hover:bg-slate-800 transition-all duration-300;
+	animation: fadeIn 1s ease-in-out;
+}
+
+.product-item img {
+	@apply w-64 h-auto rounded-lg self-center cursor-pointer hover:scale-105 transition-all duration-300;
+}
+
+.product-item h3 {
+	@apply text-3xl font-outfit font-semibold mt-2 ml-1;
+}
+
+.product-item p {
+	@apply text-[17px] mt-1 ml-1 font-outfit;
+}
+.rate {
+	@apply ml-1;
+}
+.product-item span {
+	@apply font-bold text-xl font-outfit;
+}
+.product-item .plus {
+	@apply w-10 h-10 absolute mr-[258px] mt-[230px] cursor-pointer hover:scale-110 transition-all duration-300;
+}
+.product-item .minus {
+	@apply w-12 h-12 absolute mr-[95px] mt-[226px] cursor-pointer hover:scale-110 transition-all duration-300;
+}
+.product-item .number {
+	@apply bg-primary rounded-full text-xl font-bold font-outfit w-9 h-9 flex items-center justify-center absolute mt-[232px] ml-[32px] cursor-pointer hover:scale-110 transition-all duration-300;
+}

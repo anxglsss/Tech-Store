@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+	scroll-behavior: smooth;
+}
+body {
+	width: 100%;
+	overflow-x: hidden;
+}
+
+.blue-gradient {
+	background: radial-gradient(
+		4.18% 64.18% at 71.16% 95.69%,
+		#fadefa 0.89%,
+		#efbef5 7.23%,
+		#e69df0 2.04%,
+		#de7deb 5.12%,
+		#db5ce6 1.54%,
+		#b833cf 20%
+	);
+}
+.text-gradient {
+	background: radial-gradient(
+		64.18% 64.18% at 71.16% 35.69%,
+		#fadefa 0.89%,
+		#efbef5 7.23%,
+		#ce91d6 2.04%,
+		#de7deb 5.12%,
+		#db5ce6 1.54%,
+		#d034ec 20%
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+}

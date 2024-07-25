@@ -1,0 +1,72 @@
+body {
+	@apply bg-primary;
+}
+.nav-wrap {
+	@apply bg-primary mx-[8%] pt-8 w-full overflow-hidden flex items-center;
+}
+.logo {
+	@apply flex items-center text-blue-50 font-bold font-outfit text-4xl gap-4 mr-[410px] text-nowrap;
+}
+.nav-list {
+	@apply text-white font-outfit font-semibold list-none flex gap-16 cursor-pointer relative mr-12 lg:-translate-x-60 xs:hidden lg:flex;
+}
+.nav-list li {
+	position: relative;
+	@apply cursor-pointer;
+}
+
+.nav-list li a::before {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 2px;
+	margin-top: 1px;
+	bottom: 0;
+	left: 0;
+	background-color: rgb(183, 0, 255);
+	visibility: hidden;
+	transition: all 0.3s ease-in-out;
+}
+
+.nav-list li a:hover::before {
+	visibility: visible;
+	width: 100%;
+}
+
+.store {
+	@apply text-secondary;
+}
+.text {
+	@apply text-3xl font-bold underline text-red-500 font-outfit;
+}
+.cart {
+	@apply lg:-translate-x-40 hover:scale-110 cursor-pointer transition-all duration-300;
+}
+.control {
+	@apply bg-secondary text-lg font-outfit font-bold lg:px-8 py-[8px] text-white border-transparent rounded-3xl -ml-28 hover:bg-primary hover:text-secondary cursor-pointer transition-all duration-300;
+}
+.username {
+	@apply font-bold text-white font-outfit -translate-x-44 text-xl;
+}
+.total {
+	@apply font-bold text-white bg-secondary rounded-full px-2 font-outfit -translate-x-44 text-sm absolute right-0 mr-[132px] -translate-y-9;
+}
+
+.form {
+	@apply flex flex-col gap-4 font-outfit;
+}
+.form input {
+	@apply font-bold text-black outline-none rounded-xl py-2 px-6;
+}
+.form input::placeholder {
+	@apply text-gray-500 font-bold;
+}
+.form p {
+	@apply text-red-500 font-bold ml-2 -mt-4;
+}
+.change {
+	@apply text-blue-400 font-semibold mt-6 cursor-pointer;
+}
+.action {
+	@apply text-4xl font-outfit font-bold text-secondary mb-4 ml-2;
+}

@@ -1,0 +1,44 @@
+.hero-wrap {
+	@apply text-white font-outfit lg:mt-[120px] xs:mt-[60px] mx-[8%] relative;
+	animation: fadeIn 1s linear;
+}
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+.hero-main {
+	@apply w-[350px] bg-gray-300 bg-opacity-10 h-[44px] flex rounded-2xl items-center gap-2 mb-8 hover:bg-slate-700 transition-all duration-300 pl-[34px];
+}
+.disc-text {
+	@apply font-outfit font-normal cursor-pointer;
+}
+.main-text {
+	@apply lg:text-[5.6rem] mb-8 font-bold xs:leading-[6.4rem] xs:text-6xl xs:ml-[10px] lg:ml-0;
+}
+.main-desc {
+	@apply font-semibold text-zinc-500 xs:w-[220px] xs:text-center xs:hidden lg:block lg:ml-0 lg:text-start lg:w-[600px];
+}
+.robo-wrap {
+	@apply absolute lg:right-[30px] lg:-top-8;
+}
+.robo-bg {
+	@apply lg:w-[480px] lg:h-[480px] xs:w-[320px]  rounded-full xs:blur-[300px] opacity-60;
+}
+.hero-stat {
+	@apply lg:flex items-center lg:mt-24 gap-[200px] lg:ml-[9%] xs:ml-[12%] xs:block xs:mt-[440px] font-outfit;
+}
+.hero-stat div {
+	@apply flex items-center gap-2 font-outfit font-bold;
+}
+
+.ant-modal {
+	@apply text-white font-outfit text-2xl;
+}
+
+.ant-modal-header {
+	@apply text-4xl;
+}
